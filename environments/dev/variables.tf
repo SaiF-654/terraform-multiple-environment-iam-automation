@@ -1,12 +1,17 @@
-variable "iam_user_name" {
-  type    = list(string)
+variable "iam_user" {
+  type = string
 }
-
-variable "iam_group_name" {
-  type    = list(string)
+variable "iam_group" {
+  type = string
 }
 
 variable "iam_policies" {
-  type    = list(string)
+  type = list(string)
 }
 
+variable "iam_role" {
+  type = string
+}
+variable "iam_instance_profile" {
+  type = string
+}
